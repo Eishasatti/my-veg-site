@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FORM</title>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 50vh;
+            background-size:cover ;
+            background-position: center;
+        }
+        .loginform{
+            width: 400px;
+            padding: 40px;
+            margin: auto;
+            background-color: blueviolet;
+            color:#fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"]
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        .submitbtn
+        {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM</h1>
+    <DIV ID="FORM" CLASS=" loginform">
+        <FORM action="/registration " method="post">
+            <label for="username">Username:</label><BR>
+            <input type="text" id="username" name="myusername"><br>
+            <label type="email">email</label>
+            <input type="email" id="email" name="myemail"><br>
+            <label for="contact">Contact:</label>
+            <input type="number" id="contact" name="mycontact"><br>
+            <label for="range">Rating</label>
+            <input id="rate" type="range" name="rating" style="accent-color: blue;"><br>
+            <BR>
+            <LABEL FOR="country">Country</LABEL>
+            <select id="country" name="country">
+                <option value="PAKISTAN">PAKISTAN</option>
+                <OPTION VALUE="INDIA">INDIA</OPTION>
+                <OPTION VALUE="USA">USA</OPTION>
+                <OPTION VALUE="UK">UK</OPTION>
+            </select> <BR>
+            <label for="eligibility">i agree to terms and conditions</label>
+            <input type="checkbox" id="eligibility" name="eligible"><br>
+            <label for="Gender">Gender:</label><br>
+            MALE<input type="radio" id="Gender" name="myGender">
+            FEMALE<input type="radio" name="myGender"><br>
+            <label for="feedback">feedback</label><br>
+            <input id="feed" type="text" name="feedback"><br>
+            <LABEL for="password">password:</LABEL>
+            <input type="password" id="password" name="mypassword"><br>
+            <button class="submitbtn" id="btn">login</button>
+            <br>
+            <input type="reset" value="reset now">
+        </FORM>
+    </DIV>
+</body>
+
+</html>
+<!--       
+            <label for="date">date</label><br>
+            <input type="date" id="date" name="todaysdate"><br>
+               <label for="category">category</label>
+            <select id="category" name="category">
+                <option value="bugreport">bugreport</option>
+                <option value="suggestion">suggestion</option>
+                <option value="question">question</option>
+            </select>  -->
+              <!-- gender -->  
+               <!-- feedback  -->
+           
+             <!-- rating scale  -->

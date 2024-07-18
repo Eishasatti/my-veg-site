@@ -1,0 +1,60 @@
+/* Styles for the gallery */
+#div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing around the images */
+}
+
+/* Styling the individual images */
+#div img {
+    width: 200px; /* Adjust the width according to your preference */
+    height: auto;
+    margin: 10px; /* Add margin for spacing between images */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Add transition for smooth transformation */
+}
+#gallogo{
+    align-items: center;
+}
+/* Scale up the image on hover */
+#div img:hover {
+    transform: scale(1.5);
+}
+
+/* Styling the navigation bar */
+nav {
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px; /* Add padding for better appearance */
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+/* Styling the search box */
+.search-box {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Styling the body */
+body {
+    background-color: rgb(171, 104, 104);
+    
+
+}
+p{
+    text-align: center;
+font-family: cursive;
+
+}
+h1{
+    text-align: center;
+    color: #65d17b;
+}

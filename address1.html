@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background:url('backii.jpg')  no-repeat center center fixed;
+            background-size: cover;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+
+            width: 50%;
+            margin: 20px;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: rgba(213, 172, 197, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 3px;
+            font-weight: bold;
+            color: #464141;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            padding: 5px;
+            margin-bottom: 5px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #7ee883;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: rgba(241, 241, 241, 0.8);
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 12px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            input[type="text"], input[type="email"], input[type="tel"], textarea {
+                font-size: 14px;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"   placeholder="0xxx-xxxxxxx"      placetitle="Please enter a valid 10-digit phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <div>
+                    <input type="radio" id="cod" name="payment-method" value="cod" checked required>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            alert('Your order has been placed successfully. It will be delivered soon.');
+            return true;
+        }
+    </script>
+</body>
+</html>

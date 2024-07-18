@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGB - Eisha's Green Basket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="newas.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+
+        }
+
+        .navir {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 98%;
+        }
+
+        .navir img {
+            height: 50px;
+        }
+
+        .navir ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navir ul li {
+            margin-left: 20px;
+        }
+
+        .navir ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navir ul li a:hover {
+            color: #ffdd57;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 90px;
+            /* Adjusted margin to account for fixed navbar */
+        }
+
+        #logo {
+            display: block;
+            margin: 20px auto;
+            height: 250px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #backimg {
+            background-image: url("background.jpg");
+            width: 95%;
+            height: 70vh;
+            background-size: cover;
+            background-position: top 15% right 0;
+            padding: 0 80px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        section p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+        }
+
+        #buybtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        #buybtn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+    <script src="mon.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navir">
+            <img src="C:/Users/PMLS/Desktop/re.png" id="navlogo">
+            <ul>
+                <li><a href="index.html"
+                        target="_blank">HOME</a> </li>
+                
+                <li><a href="signup.html" target="_blank">Sign Up</a>
+                </li>
+                <li><a href="fixedcart.html" target="_blank">Shop</a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="backimg">
+
+    </section>
+    <section >
+        <h1>WELCOME TO MOST TRUST-WORTHY VEGETABLES SELLING WEBSITE</h1>
+        <img src="re.png" id="logo">
+        <p>Welcome to our Vegetable's Market, where freshness meets flavor! At our store, we're dedicated to providing
+            you with the highest quality, locally sourced produce that bursts with vibrant taste and nutritional
+            goodness. Our commitment to sustainability means that every vegetable you find here is grown with care,
+            ensuring minimal environmental impact and maximum satisfaction for you, our valued customer. From crisp,
+            leafy greens to succulent tomatoes and a rainbow of seasonal delights, our selection is curated to inspire
+            your culinary adventures and elevate every meal. Whether you're a seasoned chef looking for premium
+            ingredients or a home cook seeking wholesome goodness, EGB-eisha green basket is your go-to destination for
+            all things fresh and flavorful. We believe in the power of vegetables to nourish both body and soul, and
+            we're passionate about sharing that belief with you. Join us in celebrating the beauty and bounty of
+            nature's harvest, one delicious bite at a time. Visit Eisha's Vegetables today and experience the difference
+            that freshness makes!</p>
+    </section>
+
+    <section>
+        <h1>DELIVERY INFORMATION</h1>
+        <p>It's our first priority to deliver your order at your doorstep as soon as possible. We have a large number of
+            riders who collect fresh vegetables from the market as soon as your order is received.</p>
+    </section>
+    <section>
+        <h1>Order-Now</h1>
+        <p>Don't hesitate to try our service...</p>
+        <form>
+            <button id="buybtn" onclick="buynow()">BUY NOW</button>
+        </form>
+    </section>
+    </div>
+    <footer>
+        <ul>
+            <li>CONTACT US</li>
+            <li>Email: esatti07@gmail.com</li>
+            <li>Phone: 03485718830</li> <!-- Add your phone number here -->
+            <li>Address: Rawalpindi Cantt</li>
+        </ul>
+    </footer>
+    <script>
+        function buynow(){
+            window.open('fixedcart.html');
+        }
+    </script>
+</body>
+
+</html>
